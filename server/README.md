@@ -8,6 +8,11 @@ Esta é uma simples API de CRUD de usuários consumida pelo frontend do desafio.
 -   JsonWebToken;
 -   Docker;
 
+env server:
+```
+DATABASE_URL="postgresql://postgres:1234@localhost:5432/mytapptest?schema=public"
+JWT_SECRET=0g42hg943hg394gh349gh39bvh347uvhbre9h347hgb932b42
+```
 ## Instalação e Execução
 Istale as dependências do projeto
 ```
@@ -16,6 +21,10 @@ npm install
 Generate Prisma Client
 ```
  npx prisma generate --schema src/prisma/schema.prisma
+```
+Gerar migrações
+```
+npx prisma migrate dev --schema src/prisma/schema.prisma
 ```
 Execute o container
 ```
