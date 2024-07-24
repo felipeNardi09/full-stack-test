@@ -9,3 +9,7 @@ npm install
 ```
 npm run dev
 ```
+env front:
+```
+VITE_API_URL=http://localhost:3000/
+```
